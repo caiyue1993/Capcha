@@ -11,15 +11,19 @@
 		67A969A41DF6C9F800397526 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A969A31DF6C9F800397526 /* ViewController.swift */; };
 		67A969A91DF6C9F800397526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67A969A81DF6C9F800397526 /* Assets.xcassets */; };
 		67A969AC1DF6C9F800397526 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67A969AA1DF6C9F800397526 /* LaunchScreen.storyboard */; };
+		C9BA7566DE0B709ADE36BC5C /* Pods_Capcha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59EF925EDAC9245514D976D6 /* Pods_Capcha.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C3D70A592F33696D34C1345 /* Pods-Capcha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capcha.release.xcconfig"; path = "Pods/Target Support Files/Pods-Capcha/Pods-Capcha.release.xcconfig"; sourceTree = "<group>"; };
+		59EF925EDAC9245514D976D6 /* Pods_Capcha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capcha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A9699E1DF6C9F800397526 /* Capcha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capcha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A969A11DF6C9F800397526 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67A969A31DF6C9F800397526 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		67A969A81DF6C9F800397526 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67A969AB1DF6C9F800397526 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67A969AD1DF6C9F800397526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D611F5420F31C95BE82441E7 /* Pods-Capcha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capcha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Capcha/Pods-Capcha.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +31,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9BA7566DE0B709ADE36BC5C /* Pods_Capcha.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6778E9B11F6F09BE05014093 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59EF925EDAC9245514D976D6 /* Pods_Capcha.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		67A969951DF6C9F800397526 = {
 			isa = PBXGroup;
 			children = (
 				67A969A01DF6C9F800397526 /* Capcha */,
 				67A9699F1DF6C9F800397526 /* Products */,
+				FB0DA052429B77546629AE82 /* Pods */,
+				6778E9B11F6F09BE05014093 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +76,15 @@
 			path = Capcha;
 			sourceTree = "<group>";
 		};
+		FB0DA052429B77546629AE82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D611F5420F31C95BE82441E7 /* Pods-Capcha.debug.xcconfig */,
+				2C3D70A592F33696D34C1345 /* Pods-Capcha.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,9 +92,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67A969B01DF6C9F800397526 /* Build configuration list for PBXNativeTarget "Capcha" */;
 			buildPhases = (
+				4DD63D9B534EC6B4EF8D735A /* [CP] Check Pods Manifest.lock */,
 				67A9699A1DF6C9F800397526 /* Sources */,
 				67A9699B1DF6C9F800397526 /* Frameworks */,
 				67A9699C1DF6C9F800397526 /* Resources */,
+				D411E4AEEE2D8F489D9386B8 /* [CP] Embed Pods Frameworks */,
+				0B4623C32D4DB19F94040C10 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,6 +154,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B4623C32D4DB19F94040C10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Capcha/Pods-Capcha-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DD63D9B534EC6B4EF8D735A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D411E4AEEE2D8F489D9386B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Capcha/Pods-Capcha-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		67A9699A1DF6C9F800397526 /* Sources */ = {
@@ -245,6 +320,7 @@
 		};
 		67A969B11DF6C9F800397526 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D611F5420F31C95BE82441E7 /* Pods-Capcha.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RCMHACTPLY;
@@ -252,12 +328,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.soledad.Capcha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
 		67A969B21DF6C9F800397526 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C3D70A592F33696D34C1345 /* Pods-Capcha.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RCMHACTPLY;
@@ -265,7 +342,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.soledad.Capcha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Release;
 		};

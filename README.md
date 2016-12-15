@@ -2,12 +2,10 @@
 
 Capcha(咔擦) helps photographers and models find each other. Join us!
 
-# Capcha: Project Introductory Guide
-
 ## Intro
 
 Capcha use Swift 3 and is under development right now.
 
-Wait and see how it rocks. 
+Wait and see how it rocks! 
 
 
