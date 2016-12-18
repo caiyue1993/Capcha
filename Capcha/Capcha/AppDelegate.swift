@@ -12,13 +12,15 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var viewController: ViewController?
+    var mainViewController: HorizontalScrollViewController!
+    var navigationController: CapchaNavigationController?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.viewController = ViewController()
-        self.window?.rootViewController = viewController
+        self.mainViewController = HorizontalScrollViewController()
+        self.navigationController = CapchaNavigationController(rootViewController: mainViewController)
+        self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
         
         return true
