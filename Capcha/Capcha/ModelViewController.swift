@@ -12,6 +12,10 @@ class ModelViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .orange
     }
-
+    
+    public func refresh() {
+        print("Model vc refresh")
+    }
 }
