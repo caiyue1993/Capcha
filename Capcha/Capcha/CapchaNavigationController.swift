@@ -12,9 +12,6 @@ class CapchaNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        title = "Capcha"
-        navigationBar.tintColor = .black
     }
-
+    
 }
