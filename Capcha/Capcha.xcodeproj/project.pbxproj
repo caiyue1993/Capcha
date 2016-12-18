@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		676746531E057CEB003958D9 /* CapchaNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676746501E057CEB003958D9 /* CapchaNavigationController.swift */; };
+		676746541E057CEB003958D9 /* ModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676746511E057CEB003958D9 /* ModelViewController.swift */; };
+		676746551E057CEB003958D9 /* PhotographerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676746521E057CEB003958D9 /* PhotographerViewController.swift */; };
+		676746571E057E22003958D9 /* HorizontalScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676746561E057E22003958D9 /* HorizontalScrollViewController.swift */; };
 		67A969A21DF6C9F800397526 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A969A11DF6C9F800397526 /* AppDelegate.swift */; };
-		67A969A41DF6C9F800397526 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A969A31DF6C9F800397526 /* ViewController.swift */; };
 		67A969A91DF6C9F800397526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67A969A81DF6C9F800397526 /* Assets.xcassets */; };
 		67A969AC1DF6C9F800397526 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67A969AA1DF6C9F800397526 /* LaunchScreen.storyboard */; };
 		C9BA7566DE0B709ADE36BC5C /* Pods_Capcha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59EF925EDAC9245514D976D6 /* Pods_Capcha.framework */; };
@@ -17,9 +20,12 @@
 /* Begin PBXFileReference section */
 		2C3D70A592F33696D34C1345 /* Pods-Capcha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capcha.release.xcconfig"; path = "Pods/Target Support Files/Pods-Capcha/Pods-Capcha.release.xcconfig"; sourceTree = "<group>"; };
 		59EF925EDAC9245514D976D6 /* Pods_Capcha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capcha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		676746501E057CEB003958D9 /* CapchaNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CapchaNavigationController.swift; path = ../CapchaNavigationController.swift; sourceTree = "<group>"; };
+		676746511E057CEB003958D9 /* ModelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelViewController.swift; path = ../ModelViewController.swift; sourceTree = "<group>"; };
+		676746521E057CEB003958D9 /* PhotographerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotographerViewController.swift; path = ../PhotographerViewController.swift; sourceTree = "<group>"; };
+		676746561E057E22003958D9 /* HorizontalScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HorizontalScrollViewController.swift; path = ../HorizontalScrollViewController.swift; sourceTree = "<group>"; };
 		67A9699E1DF6C9F800397526 /* Capcha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capcha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A969A11DF6C9F800397526 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		67A969A31DF6C9F800397526 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		67A969A81DF6C9F800397526 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67A969AB1DF6C9F800397526 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67A969AD1DF6C9F800397526 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,6 +44,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		674FDFF81E06EFFD00CF2D0A /* Columns */ = {
+			isa = PBXGroup;
+			children = (
+				676746511E057CEB003958D9 /* ModelViewController.swift */,
+				676746521E057CEB003958D9 /* PhotographerViewController.swift */,
+			);
+			path = Columns;
+			sourceTree = "<group>";
+		};
+		674FDFF91E06F07A00CF2D0A /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				676746501E057CEB003958D9 /* CapchaNavigationController.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		674FDFFA1E06F0CE00CF2D0A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				676746561E057E22003958D9 /* HorizontalScrollViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		6778E9B11F6F09BE05014093 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -67,8 +98,10 @@
 		67A969A01DF6C9F800397526 /* Capcha */ = {
 			isa = PBXGroup;
 			children = (
+				674FDFFA1E06F0CE00CF2D0A /* Home */,
+				674FDFF91E06F07A00CF2D0A /* Custom */,
+				674FDFF81E06EFFD00CF2D0A /* Columns */,
 				67A969A11DF6C9F800397526 /* AppDelegate.swift */,
-				67A969A31DF6C9F800397526 /* ViewController.swift */,
 				67A969A81DF6C9F800397526 /* Assets.xcassets */,
 				67A969AA1DF6C9F800397526 /* LaunchScreen.storyboard */,
 				67A969AD1DF6C9F800397526 /* Info.plist */,
@@ -208,8 +241,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67A969A41DF6C9F800397526 /* ViewController.swift in Sources */,
+				676746571E057E22003958D9 /* HorizontalScrollViewController.swift in Sources */,
+				676746531E057CEB003958D9 /* CapchaNavigationController.swift in Sources */,
 				67A969A21DF6C9F800397526 /* AppDelegate.swift in Sources */,
+				676746551E057CEB003958D9 /* PhotographerViewController.swift in Sources */,
+				676746541E057CEB003958D9 /* ModelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +361,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RCMHACTPLY;
 				INFOPLIST_FILE = Capcha/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.soledad.Capcha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -339,6 +376,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RCMHACTPLY;
 				INFOPLIST_FILE = Capcha/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.soledad.Capcha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
