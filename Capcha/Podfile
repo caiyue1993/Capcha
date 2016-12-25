@@ -7,6 +7,7 @@ target 'Capcha' do
 
   # Pods for Capcha
   pod 'SnapKit','~> 3.0.2'
+  pod 'SwifterSwift'
 end
 
 post_install do |installer|

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		674FDFFC1E0E49C200CF2D0A /* CapchaHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674FDFFB1E0E49C200CF2D0A /* CapchaHomeTableViewCell.swift */; };
 		676746531E057CEB003958D9 /* CapchaNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676746501E057CEB003958D9 /* CapchaNavigationController.swift */; };
 		676746541E057CEB003958D9 /* ModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676746511E057CEB003958D9 /* ModelViewController.swift */; };
 		676746551E057CEB003958D9 /* PhotographerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676746521E057CEB003958D9 /* PhotographerViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		2C3D70A592F33696D34C1345 /* Pods-Capcha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capcha.release.xcconfig"; path = "Pods/Target Support Files/Pods-Capcha/Pods-Capcha.release.xcconfig"; sourceTree = "<group>"; };
 		59EF925EDAC9245514D976D6 /* Pods_Capcha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capcha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		674FDFFB1E0E49C200CF2D0A /* CapchaHomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapchaHomeTableViewCell.swift; sourceTree = "<group>"; };
 		676746501E057CEB003958D9 /* CapchaNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CapchaNavigationController.swift; path = ../CapchaNavigationController.swift; sourceTree = "<group>"; };
 		676746511E057CEB003958D9 /* ModelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelViewController.swift; path = ../ModelViewController.swift; sourceTree = "<group>"; };
 		676746521E057CEB003958D9 /* PhotographerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotographerViewController.swift; path = ../PhotographerViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				676746501E057CEB003958D9 /* CapchaNavigationController.swift */,
+				674FDFFB1E0E49C200CF2D0A /* CapchaHomeTableViewCell.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				676746531E057CEB003958D9 /* CapchaNavigationController.swift in Sources */,
 				67A969A21DF6C9F800397526 /* AppDelegate.swift in Sources */,
 				676746551E057CEB003958D9 /* PhotographerViewController.swift in Sources */,
+				674FDFFC1E0E49C200CF2D0A /* CapchaHomeTableViewCell.swift in Sources */,
 				676746541E057CEB003958D9 /* ModelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
