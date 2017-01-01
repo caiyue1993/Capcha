@@ -1,15 +1,35 @@
 PODS:
+  - Alamofire (4.2.0)
+  - LeanCloud (10.0.0):
+    - LeanCloud/Storage (= 10.0.0)
+  - LeanCloud/Storage (10.0.0):
+    - Alamofire (~> 4.2.0)
+  - pop (1.0.9)
   - SnapKit (3.0.2)
   - SwifterSwift (1.2.2)
 
 DEPENDENCIES:
+  - LeanCloud
+  - pop (from `https://github.com/facebook/pop.git`)
   - SnapKit (~> 3.0.2)
   - SwifterSwift
 
+EXTERNAL SOURCES:
+  pop:
+    :git: https://github.com/facebook/pop.git
+
+CHECKOUT OPTIONS:
+  pop:
+    :commit: 14098ea9c49893bffeb02d74dc7fdad0ccf19949
+    :git: https://github.com/facebook/pop.git
+
 SPEC CHECKSUMS:
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  LeanCloud: 0a6a0d52e33dd43d998ab256cc83f6c4954607b8
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
   SwifterSwift: 52d518f650baf7fa8069dacfc802214b8e58b81c
 
-PODFILE CHECKSUM: 5c0d94b49383463f36b1038d4f9687bae1a1b694
+PODFILE CHECKSUM: 3eedadc23efcf2d9bf242ea6e425b72f2f360c6a
 
 COCOAPODS: 1.0.1

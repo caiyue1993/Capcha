@@ -8,6 +8,8 @@ target 'Capcha' do
   # Pods for Capcha
   pod 'SnapKit','~> 3.0.2'
   pod 'SwifterSwift'
+  pod 'LeanCloud'
+  pod 'pop', :git => 'https://github.com/facebook/pop.git'
 end
 
 post_install do |installer|
