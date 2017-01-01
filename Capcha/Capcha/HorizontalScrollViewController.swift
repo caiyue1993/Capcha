@@ -9,6 +9,7 @@
 import UIKit
 import SnapKit
 import SwifterSwift
+import LeanCloud
 
 class HorizontalScrollViewController: UIViewController {
     
@@ -65,11 +66,11 @@ class HorizontalScrollViewController: UIViewController {
     func setupNavBar() {
         
         if let button = photographersButtonItem.customView as? UIButton {
-            button.setTitleColor(UIColor(hex: 0x424242, transparency: 1.0), for: .normal)
+            button.setTitleColor(UIColor.capchaNavigationBarTintColor(), for: .normal)
         }
         
         if let button = modelsButtonItem.customView as? UIButton {
-            button.setTitleColor(UIColor(hex: 0x424242, transparency: 0.3), for: .normal)
+            button.setTitleColor(UIColor.capchaNavigationBarTintColor().withAlphaComponent(0.3), for: .normal)
         }
     
         navigationItem.leftBarButtonItems = [photographersButtonItem, modelsButtonItem]
@@ -83,10 +84,6 @@ class HorizontalScrollViewController: UIViewController {
         horizontalScrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
     }
     
-    func barButtons() -> [UIBarButtonItem]? {
-        return navigationItem.leftBarButtonItems
-    }
-    
 }
 
 extension HorizontalScrollViewController: UIScrollViewDelegate {
@@ -94,16 +91,12 @@ extension HorizontalScrollViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let alphaOfModelButtonItem = (scrollView.contentOffset.x / view.frame.size.width)
         if let button = photographersButtonItem.customView as? UIButton {
-            button.setTitleColor(UIColor(hex: 0x424242, transparency: 1 - alphaOfModelButtonItem * 0.7), for: .normal)
+            button.setTitleColor(UIColor.capchaNavigationBarTintColor().withAlphaComponent(1 - alphaOfModelButtonItem * 0.7), for: .normal)
         }
         
         if let button = modelsButtonItem.customView as? UIButton {
-            button.setTitleColor(UIColor(hex: 0x424242, transparency: alphaOfModelButtonItem + 0.3), for: .normal)
+            button.setTitleColor(UIColor.capchaNavigationBarTintColor().withAlphaComponent(alphaOfModelButtonItem + 0.3), for: .normal)
         }
     }
     
-//    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-//        let page = scrollView.contentOffset.x / view.frame.size.width
-//        
-//    }
 }
