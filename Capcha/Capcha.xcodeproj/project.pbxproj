@@ -14,6 +14,7 @@
 		674FE0051E19150B00CF2D0A /* RainyRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674FE0041E19150B00CF2D0A /* RainyRefreshControl.swift */; };
 		674FE0071E19153300CF2D0A /* RainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674FE0061E19153300CF2D0A /* RainScene.swift */; };
 		674FE00B1E19369A00CF2D0A /* UIColor+Capcha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674FE00A1E19369A00CF2D0A /* UIColor+Capcha.swift */; };
+		674FE00F1E195DCC00CF2D0A /* Photographer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674FE00E1E195DCC00CF2D0A /* Photographer.swift */; };
 		676746531E057CEB003958D9 /* CapchaNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676746501E057CEB003958D9 /* CapchaNavigationController.swift */; };
 		676746541E057CEB003958D9 /* ModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676746511E057CEB003958D9 /* ModelViewController.swift */; };
 		676746551E057CEB003958D9 /* PhotographerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676746521E057CEB003958D9 /* PhotographerViewController.swift */; };
@@ -29,11 +30,12 @@
 		59EF925EDAC9245514D976D6 /* Pods_Capcha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capcha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		674FDFFB1E0E49C200CF2D0A /* CapchaHomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapchaHomeTableViewCell.swift; sourceTree = "<group>"; };
 		674FDFFE1E189D0F00CF2D0A /* CYRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CYRefreshControl.swift; sourceTree = "<group>"; };
-		674FE0001E1914A400CF2D0A /* rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = rain.sks; sourceTree = "<group>"; };
-		674FE0011E1914A400CF2D0A /* Umbrella.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Umbrella.swift; sourceTree = "<group>"; };
+		674FE0001E1914A400CF2D0A /* rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = rain.sks; path = ../rain.sks; sourceTree = "<group>"; };
+		674FE0011E1914A400CF2D0A /* Umbrella.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Umbrella.swift; path = ../Umbrella.swift; sourceTree = "<group>"; };
 		674FE0041E19150B00CF2D0A /* RainyRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainyRefreshControl.swift; sourceTree = "<group>"; };
 		674FE0061E19153300CF2D0A /* RainScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainScene.swift; sourceTree = "<group>"; };
-		674FE00A1E19369A00CF2D0A /* UIColor+Capcha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Capcha.swift"; sourceTree = "<group>"; };
+		674FE00A1E19369A00CF2D0A /* UIColor+Capcha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Capcha.swift"; path = "../Theme/UIColor+Capcha.swift"; sourceTree = "<group>"; };
+		674FE00E1E195DCC00CF2D0A /* Photographer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photographer.swift; sourceTree = "<group>"; };
 		676746501E057CEB003958D9 /* CapchaNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CapchaNavigationController.swift; path = ../CapchaNavigationController.swift; sourceTree = "<group>"; };
 		676746511E057CEB003958D9 /* ModelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelViewController.swift; path = ../ModelViewController.swift; sourceTree = "<group>"; };
 		676746521E057CEB003958D9 /* PhotographerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotographerViewController.swift; path = ../PhotographerViewController.swift; sourceTree = "<group>"; };
@@ -94,12 +96,29 @@
 			path = Commons;
 			sourceTree = "<group>";
 		};
-		674FE0091E19367E00CF2D0A /* Theme */ = {
+		674FE00C1E194AEF00CF2D0A /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				674FE0001E1914A400CF2D0A /* rain.sks */,
+				674FE0011E1914A400CF2D0A /* Umbrella.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		674FE00D1E195DB800CF2D0A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				674FE00E1E195DCC00CF2D0A /* Photographer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		674FE0101E19631E00CF2D0A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				674FE00A1E19369A00CF2D0A /* UIColor+Capcha.swift */,
 			);
-			path = Theme;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		6778E9B11F6F09BE05014093 /* Frameworks */ = {
@@ -131,14 +150,14 @@
 		67A969A01DF6C9F800397526 /* Capcha */ = {
 			isa = PBXGroup;
 			children = (
-				674FE0091E19367E00CF2D0A /* Theme */,
+				674FE0101E19631E00CF2D0A /* Extension */,
+				674FE00D1E195DB800CF2D0A /* Model */,
+				674FE00C1E194AEF00CF2D0A /* Animation */,
 				674FDFFD1E189CEA00CF2D0A /* Commons */,
 				674FDFFA1E06F0CE00CF2D0A /* Home */,
 				674FDFF91E06F07A00CF2D0A /* Custom */,
 				674FDFF81E06EFFD00CF2D0A /* Columns */,
 				67A969A11DF6C9F800397526 /* AppDelegate.swift */,
-				674FE0001E1914A400CF2D0A /* rain.sks */,
-				674FE0011E1914A400CF2D0A /* Umbrella.swift */,
 				67A969A81DF6C9F800397526 /* Assets.xcassets */,
 				67A969AA1DF6C9F800397526 /* LaunchScreen.storyboard */,
 				67A969AD1DF6C9F800397526 /* Info.plist */,
@@ -279,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				674FE00F1E195DCC00CF2D0A /* Photographer.swift in Sources */,
 				676746571E057E22003958D9 /* HorizontalScrollViewController.swift in Sources */,
 				676746531E057CEB003958D9 /* CapchaNavigationController.swift in Sources */,
 				67A969A21DF6C9F800397526 /* AppDelegate.swift in Sources */,

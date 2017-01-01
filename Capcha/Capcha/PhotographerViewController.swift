@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import LeanCloud
 
 class PhotographerViewController: UIViewController {
     
@@ -21,7 +22,7 @@ class PhotographerViewController: UIViewController {
     
     lazy var refreshControl: RainyRefreshControl = {
         let refreshControl = RainyRefreshControl()
-        refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        refreshControl.addTarget(self, action: #selector(requirePhotographerInfo), for: .valueChanged)
         return refreshControl
     }()
     
@@ -39,6 +40,22 @@ class PhotographerViewController: UIViewController {
         let popTime = DispatchTime.now() + Double(Int64(3.0 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC);
         DispatchQueue.main.asyncAfter(deadline: popTime) { () -> Void in
             self.refreshControl.endRefreshing()
+        }
+    }
+    
+    func requirePhotographerInfo() {
+        let query = LCQuery(className: "Photographer")
+        query.find { result in
+            switch result {
+            case .success(let photographers):
+//                print(photographers)
+                let photographer = photographers[0] as! Photographer
+                if let photographerName = photographer.name?.value {
+                    print(photographerName)
+                }
+            case .failure(let error):
+                print(error)
+            }
         }
     }
     
