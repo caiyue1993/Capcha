@@ -19,12 +19,26 @@ class PhotographerViewController: UIViewController {
         return tableView
     }()
     
+    lazy var refreshControl: RainyRefreshControl = {
+        let refreshControl = RainyRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        return refreshControl
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
         view.addSubview(tableView)
+        tableView.addSubview(refreshControl)
         tableView.snp.makeConstraints { (make) in
             make.edges.equalTo(view)
+        }
+    }
+    
+    func refresh() {
+        let popTime = DispatchTime.now() + Double(Int64(3.0 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC);
+        DispatchQueue.main.asyncAfter(deadline: popTime) { () -> Void in
+            self.refreshControl.endRefreshing()
         }
     }
     
@@ -38,6 +52,7 @@ extension PhotographerViewController: UITableViewDelegate, UITableViewDataSource
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier", for: indexPath) as! CapchaHomeTableViewCell
+        cell.selectionStyle = .none
         return cell
     }
     
