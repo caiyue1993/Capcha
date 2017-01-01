@@ -16,7 +16,7 @@ class CYRefreshControl: UIControl {
     private var forbidsOffsetChanges = false
     private var forbidsInsetChanges = false
     
-    public var animationDuration = TimeInterval(0.33)
+    public var animationDuration = TimeInterval(0.63)
     public var animationDamping = CGFloat(0.4)
     public var animationVelocity = CGFloat(0.8)
     public var delayBeforeEnd = 0.0
