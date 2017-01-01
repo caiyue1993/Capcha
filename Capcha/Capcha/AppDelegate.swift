@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LeanCloud
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationController = CapchaNavigationController(rootViewController: mainViewController)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
+        
+        // register LeanCloud
+        LeanCloud.initialize(applicationID: "4Fr17RGbbueGkfsvz3X3MJDb-gzGzoHsz", applicationKey: "zHiKfv7a06SLCJqBptmbXQ1i")
         
         return true
         
