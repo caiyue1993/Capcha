@@ -9,16 +9,16 @@
 import UIKit
 import SpriteKit
 
-final class RainyRefreshControl: ONXRefreshControl {
+final class RainyRefreshControl: CYRefreshControl {
     
     private var backgroundView: SKView!
-    var bgColor = UIColor(red: 85.0/255.0, green: 74.0/255.0, blue: 99.0/255.0, alpha: 1)
+    var bgColor = UIColor(hex: 0x424242, transparency: 0.8)
     private var scene: RainScene?
     private var umbrellaView: UmbrellaView!
     private var thresholdValue: CGFloat = 100.0
     
     override func setup() {
-        delayBeforeEnd = 0.2
+//        delayBeforeEnd = 0.2
         
         backgroundView = SKView(frame: CGRect(x: 0, y: 0, width: frame.width, height: frame.height))
         backgroundView.backgroundColor = bgColor
@@ -38,7 +38,7 @@ final class RainyRefreshControl: ONXRefreshControl {
         scene?.particles.particleBirthRate = 0
         backgroundView.presentScene(scene)
         
-        let width = backgroundView.frame.height*0.6
+        let width = backgroundView.frame.height * 0.6
         umbrellaView = UmbrellaView(frame: CGRect(x: 0, y: 0, width: width, height: width))
         umbrellaView.strokeColor = UIColor.white
         umbrellaView.lineWidth = 1
@@ -51,7 +51,7 @@ final class RainyRefreshControl: ONXRefreshControl {
         scene?.size = bounds.size
         scene?.layout()
         
-        let width = thresholdValue*0.36
+        let width = thresholdValue * 0.36
         umbrellaView.frame = CGRect(x: 0, y: 0, width: width, height: width)
         umbrellaView.center = CGPoint(x: center.x, y: backgroundView.frame.height-thresholdValue/2)
     }
