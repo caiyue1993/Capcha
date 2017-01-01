@@ -6,4 +6,10 @@
 //  Copyright © 2017年 Nanjing University. All rights reserved.
 //
 
-import Foundation
+import LeanCloud
+
+class Photographer: LCObject {
+    
+    dynamic var name: LCString?
+    
+}
