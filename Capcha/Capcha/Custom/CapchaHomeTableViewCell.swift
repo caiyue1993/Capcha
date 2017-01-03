@@ -12,19 +12,16 @@ public class CapchaHomeTableViewCell: UITableViewCell {
     
     lazy var nameLabel: UILabel = {
         let label = UILabel()
-        label.text = "小青"
         return label
     }()
     
     lazy var locationLabel: UILabel = {
         let label = UILabel()
-        label.text = "大白"
         return label
     }()
     
     lazy var photoImageView: UIImageView = {
         let imageView = UIImageView()
-        
         return imageView
     }()
     

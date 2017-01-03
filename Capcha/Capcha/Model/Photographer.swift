@@ -11,5 +11,6 @@ import LeanCloud
 class Photographer: LCObject {
     
     dynamic var name: LCString?
+    dynamic var city: LCString?
     
 }
