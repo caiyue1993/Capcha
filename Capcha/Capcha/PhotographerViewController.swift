@@ -17,6 +17,8 @@ class PhotographerViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(CapchaHomeTableViewCell.self, forCellReuseIdentifier: "cellReuseIdentifier")
+        tableView.tableFooterView = UIView(frame: .zero)
+        tableView.separatorStyle = .none
         return tableView
     }()
     
@@ -25,6 +27,8 @@ class PhotographerViewController: UIViewController {
         refreshControl.addTarget(self, action: #selector(requirePhotographerInfo), for: .valueChanged)
         return refreshControl
     }()
+    
+    var photographers: [Photographer] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,11 +52,13 @@ class PhotographerViewController: UIViewController {
         query.find { result in
             switch result {
             case .success(let photographers):
-//                print(photographers)
-                let photographer = photographers[0] as! Photographer
-                if let photographerName = photographer.name?.value {
-                    print(photographerName)
+                if let `photographers` = photographers as? [Photographer] {
+                    self.photographers = `photographers`
                 }
+                DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
+                    self.tableView.reloadData()
+                    self.refreshControl.endRefreshing() // Dalay for 2 seconds just for delight of rainy animation
+                })
             case .failure(let error):
                 print(error)
             }
@@ -64,12 +70,15 @@ class PhotographerViewController: UIViewController {
 extension PhotographerViewController: UITableViewDelegate, UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return photographers.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier", for: indexPath) as! CapchaHomeTableViewCell
         cell.selectionStyle = .none
+        cell.nameLabel.text = "我是" + (photographers[indexPath.row].name?.value)!
+        cell.locationLabel.text = photographers[indexPath.row].city?.value
+        
         return cell
     }
     
