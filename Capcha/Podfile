@@ -10,6 +10,7 @@ target 'Capcha' do
   pod 'SwifterSwift'
   pod 'LeanCloud'
   pod 'pop', :git => 'https://github.com/facebook/pop.git'
+  pod 'Whisper'
 end
 
 post_install do |installer|

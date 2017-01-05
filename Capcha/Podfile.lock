@@ -7,12 +7,14 @@ PODS:
   - pop (1.0.9)
   - SnapKit (3.0.2)
   - SwifterSwift (1.2.2)
+  - Whisper (4.0.0)
 
 DEPENDENCIES:
   - LeanCloud
   - pop (from `https://github.com/facebook/pop.git`)
   - SnapKit (~> 3.0.2)
   - SwifterSwift
+  - Whisper
 
 EXTERNAL SOURCES:
   pop:
@@ -29,7 +31,8 @@ SPEC CHECKSUMS:
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
   SwifterSwift: 52d518f650baf7fa8069dacfc802214b8e58b81c
+  Whisper: 08be92623311f8e53201e62e17f6d7b9599a4714
 
-PODFILE CHECKSUM: 3eedadc23efcf2d9bf242ea6e425b72f2f360c6a
+PODFILE CHECKSUM: 489c0feb670dd24eb6eb3b6f2f6364c25257960b
 
 COCOAPODS: 1.0.1
