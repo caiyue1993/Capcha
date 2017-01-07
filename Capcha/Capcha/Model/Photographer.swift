@@ -13,4 +13,6 @@ class Photographer: LCObject {
     dynamic var name: LCString?
     dynamic var city: LCString?
     
+    /* Swift SDK 文档尚未支持 LCFile，因此搁置 */
+//    dynamic var moment: LCFile?
 }

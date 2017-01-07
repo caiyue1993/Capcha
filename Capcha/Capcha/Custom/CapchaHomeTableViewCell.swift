@@ -63,7 +63,7 @@ public class CapchaHomeTableViewCell: UITableViewCell {
     
     func setupConstraints() {
         nameLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(contentView).offset(18)
+            make.top.equalTo(contentView).offset(20)
             make.leading.equalTo(contentView).offset(16)
         }
         upperLine.snp.makeConstraints { (make) in
@@ -78,7 +78,7 @@ public class CapchaHomeTableViewCell: UITableViewCell {
         }
         belowLine.snp.makeConstraints { (make) in
             make.centerX.equalTo(upperLine)
-            make.top.equalTo(locationLabel.snp.bottom).offset(20)
+            make.bottom.equalTo(contentView).offset(-20)
             make.height.equalTo(40)
             make.width.equalTo(upperLine)
         }
