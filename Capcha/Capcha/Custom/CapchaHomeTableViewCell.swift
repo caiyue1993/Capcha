@@ -39,10 +39,6 @@ public class CapchaHomeTableViewCell: UITableViewCell {
         return line
     }()
     
-    class func defaultHeight() -> CGFloat {
-        return 160
-    }
-    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         commonInit()

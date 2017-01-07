@@ -55,9 +55,9 @@ class PhotographerViewController: UIViewController {
                 if let `photographers` = photographers as? [Photographer] {
                     self.photographers = `photographers`
                 }
-                DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
+                DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
                     self.tableView.reloadData()
-                    self.refreshControl.endRefreshing() // Dalay for 2 seconds just for delight of rainy animation
+                    self.refreshControl.endRefreshing() // Dalay for 1 seconds just for delight of rainy animation
                 })
             case .failure(let error):
                 print(error)
@@ -76,13 +76,13 @@ extension PhotographerViewController: UITableViewDelegate, UITableViewDataSource
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier", for: indexPath) as! CapchaHomeTableViewCell
         cell.selectionStyle = .none
-        cell.nameLabel.text = "我是" + (photographers[indexPath.row].name?.value)!
+        cell.nameLabel.text = "我叫 " + (photographers[indexPath.row].name?.value)!
         cell.locationLabel.text = photographers[indexPath.row].city?.value
         
         return cell
     }
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CapchaHomeTableViewCell.defaultHeight()
+        return 160
     }
 }

@@ -41,7 +41,6 @@ extension ModelViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CapchaHomeTableViewCell.defaultHeight()
+        return 160
     }
-    
 }

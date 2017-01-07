@@ -19,6 +19,7 @@
 		676746541E057CEB003958D9 /* ModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676746511E057CEB003958D9 /* ModelViewController.swift */; };
 		676746551E057CEB003958D9 /* PhotographerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676746521E057CEB003958D9 /* PhotographerViewController.swift */; };
 		676746571E057E22003958D9 /* HorizontalScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676746561E057E22003958D9 /* HorizontalScrollViewController.swift */; };
+		676927E61E1FF73500789E62 /* Kaiti-SC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 676927E51E1FF73500789E62 /* Kaiti-SC-Regular.ttf */; };
 		67A969A21DF6C9F800397526 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A969A11DF6C9F800397526 /* AppDelegate.swift */; };
 		67A969A91DF6C9F800397526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67A969A81DF6C9F800397526 /* Assets.xcassets */; };
 		67A969AC1DF6C9F800397526 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67A969AA1DF6C9F800397526 /* LaunchScreen.storyboard */; };
@@ -40,6 +41,7 @@
 		676746511E057CEB003958D9 /* ModelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelViewController.swift; path = ../ModelViewController.swift; sourceTree = "<group>"; };
 		676746521E057CEB003958D9 /* PhotographerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotographerViewController.swift; path = ../PhotographerViewController.swift; sourceTree = "<group>"; };
 		676746561E057E22003958D9 /* HorizontalScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HorizontalScrollViewController.swift; path = ../HorizontalScrollViewController.swift; sourceTree = "<group>"; };
+		676927E51E1FF73500789E62 /* Kaiti-SC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kaiti-SC-Regular.ttf"; sourceTree = "<group>"; };
 		67A9699E1DF6C9F800397526 /* Capcha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capcha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A969A11DF6C9F800397526 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67A969A81DF6C9F800397526 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				67A969A81DF6C9F800397526 /* Assets.xcassets */,
 				67A969AA1DF6C9F800397526 /* LaunchScreen.storyboard */,
 				67A969AD1DF6C9F800397526 /* Info.plist */,
+				676927E51E1FF73500789E62 /* Kaiti-SC-Regular.ttf */,
 			);
 			path = Capcha;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				676927E61E1FF73500789E62 /* Kaiti-SC-Regular.ttf in Resources */,
 				67A969AC1DF6C9F800397526 /* LaunchScreen.storyboard in Resources */,
 				67A969A91DF6C9F800397526 /* Assets.xcassets in Resources */,
 				674FE0021E1914A400CF2D0A /* rain.sks in Resources */,

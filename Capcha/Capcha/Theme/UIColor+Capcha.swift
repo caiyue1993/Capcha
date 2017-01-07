@@ -18,5 +18,8 @@ extension UIColor {
         return UIColor(hex: 0x424242)
     }
     
+    class func capchaLineColor() -> UIColor {
+        return UIColor(hex: 0x979797)
+    }
 }
 
